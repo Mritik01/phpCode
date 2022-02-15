@@ -26,6 +26,7 @@
 
         //checking file is image or not
         $check = getimagesize($_FILES['fileup']['tmp_name']); // 
+        print_r($check);
         if ($check !== false) {
             $uploadDone = 1;
         } else {
